@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6538147065219288630}
   - component: {fileID: 6962077864965194720}
+  - component: {fileID: 555097026084289322}
   m_Layer: 0
   m_Name: Missle
   m_TagString: Untagged
@@ -84,3 +85,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &555097026084289322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4939151649049630419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16569c0d59fb5d49b5fceb7aa8668b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
