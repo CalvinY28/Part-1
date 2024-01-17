@@ -26,3 +26,5 @@ public class Player : MonoBehaviour
         myrigidbody.AddForce(direction * force * Time.deltaTime);
     }
 }
+
+//TESTING SMTH 123
