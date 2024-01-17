@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     Vector2 direction;
     public Rigidbody2D myrigidbody;
-    public float force = 10f;
+    public float speed = 10f;
 
     // Start is called before the first frame update
     private void Start()
@@ -17,12 +17,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        direction.x = Input.GetAxis("Horizontal");
-        direction.y = Input.GetAxis("Vertical");
+
     }
 
     private void FixedUpdate()
     {
+        Vector2 force = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * speed * Time.deltaTime;
         myrigidbody.AddForce(direction * force * Time.deltaTime);
     }
 }
