@@ -13,9 +13,10 @@ public class Missile : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         transform.Translate(missleSpeed * Time.deltaTime, 0, 0);
+        // use rigid body move positon not transform.translate (eg. rigidbody.Moveposition(rigidbody.positon + new vector * time.delttime;)) and use vectors
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
