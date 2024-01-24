@@ -33,4 +33,13 @@ public class Car : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        forwardSpeed = 150;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision) {
+        forwardSpeed = 300;
+    }
+
 }
