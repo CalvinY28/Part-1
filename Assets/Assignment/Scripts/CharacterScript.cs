@@ -20,6 +20,6 @@ public class CharacterScript : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 force = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * speed * Time.deltaTime;
-        rigidbody.AddForce(force);
+        rigidbody.AddForce(force); // Keep spinning feature when coliding becasue its funny (I know how to fix it -- Freeze Rotation Z)
     }
 }
